@@ -116,6 +116,8 @@ int main() {
 void insert (){
     //Checa se a array está inserindo o último elemento possível.
     //e tenta redimensionar aumentando a array, caso necessário.
+
+    //9 posicoes 8 posicoes
     if(crowd_max-crowd_size > 1){
         printf("Insira as informacoes do novo cadastro:\n");
         crowd[crowd_size] = receive_data();
