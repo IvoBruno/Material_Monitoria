@@ -134,6 +134,8 @@ void insert (){
     }
 }
 
+int vect = {0, 1, 2, 3, NULL, NULL};
+
 //Modifica um cadastro existente. Exibe o cadastro e exige confirmacao.
 void modify (void){
     int p, opt;
@@ -172,13 +174,15 @@ void erase (void){
             printf("Operacao nao realizada!\n");
         else {
             printf("Operacao Concluida!\n");
-            if (crowd_max - crowd_size > 4)
+            if (crowd_max - crowd_size > 2)
                 if (redimension(0) == 1)
                     printf(">>>Erro no controle de memória!<<<");
         }
     } else
         printf("Operacao cancelada!\n");
 }
+
+int vect = {0, 1, 2, 3, NULL, NULL};
 
 //Exibe os dados de uma pessoa. Utiliza o show_data().
 void show (void){
@@ -309,6 +313,8 @@ int rearrange (int p){
     }else
         return 1;
 }
+
+
 
 //Interno: liberando a memória do programa que por ventura estiver alocada antes de finalizar.
 void finalize(){
